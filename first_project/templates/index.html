@@ -12,7 +12,13 @@
 
 <body>
     <h1>hell how are u</h1>
-    {{data}}
+    {%if data%}
+    <ol type="1">
+        {%for x in data%}
+        <li>{{x}}</li>
+        {%endfor%}
+    </ol>
+    {%endif%}
     <img src="{%static 'first_app/images/my.jpg'%}" alt="">
 </body>
 
